@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>SAT Timer 1.2</title>
+		<script type="text/javascript" src="SAT_Timer_extended2.js"></script>
+		<style type="text/css">
+		table {
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			line-height: 200%;
+			border-collapse: collapse;
+			margin-left: 1em;
+		}
+		th {
+			border-top: 1px solid #FB7A31;
+			border-bottom: 1px solid #FB7A31;
+			border-right: 1px solid #FB7A31;
+			background: #FFC;
+		}
+		td {
+			border-bottom: 1px solid #CCC;
+			border-right: 1px solid #CCC;
+			padding: 0 0.5em;
+			text-align: right;
+		}
+		td+td {
+			border-left: 1px solid #CCC;
+		}
+		td#systime, td#sectiontime {
+			font-size: 200%;
+		}
+		#systime span {
+			color: #ffffff;
+		}
+		small {
+			font-size: 70%;
+		}
+		.soon {
+			color: #ff0000;
+		}
+		.tight { line-height: 140%;
+			text-align: left;
+		}
+		.r { text-align: right; }
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>current time</td>
+				<td class="tight" rowspan="2">Test Center #: &nbsp; &nbsp; 44932<br>
+					School address: 12400 Mellow Meadow<br>
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Austin, TX 78750<br>
+					Test date: &nbsp; &nbsp; &nbsp; &nbsp; <a id="date">03/03/2016</a>
+				</td>
+				<td>time remaining for this section</td>
+			</tr>
+			<tr><td id="systime">--:--</td><td id="sectiontime">--:--</td></tr>
+		</table>
+		<table>
+			<tr><th>section</th><th>duration</th><th>start time</th><th>end time</th><th>status</th></tr>
+			<tr id="s4">
+				<td>Section 4</td>
+				<td>52 min</td>
+				<td></td>
+				<td></td>
+				<td>not yet begun <input type="submit" id="startButton" value="Start Timer"></td>
+			</tr>
+			<tr id="sb1">
+				<td>break</td>
+				<td>~5 min</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr id="s5">
+				<td>Section 4</td>
+				<td>41 min</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr id="sb2">
+				<td>break</td>
+				<td>~5 min</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr id="s6">
+				<td>Essay</td>
+				<td>38 min</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr id="sb3">
+				<td>break</td>
+				<td>~5 min</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr id="s7">
+				<td>Essay</td>
+				<td>37 min</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<hr>
+		<p>This option is primarily for debugging; you probably don't need it.<br>
+		<input type=checkbox id=fastforward> Fast Forward (run at 120x normal speed)</p>
+	</body>
+</html>
